@@ -59,8 +59,9 @@ installing it, you can edit `btsync.conf`. At least for my device and
 setup, this file can be found in
 `/share/MD0_DATA/.qpkg/BitTorrentSync/`.
 
-If you have any questions, ask them in the BitTorrent forum thread or
-file an issue. Pull requests are always welcome!
+If you have any questions, ask them in the [BitTorrent forum
+thread](http://forum.bittorrent.com/topic/19752-bittorrent-sync-on-qnap-nas-devices/)
+or file an issue. Pull requests are always welcome!
 
 ## Thanks
 
