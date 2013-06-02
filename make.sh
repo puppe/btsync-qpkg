@@ -13,7 +13,7 @@ if [[ $1 = "" ]]; then
     curl http://btsync.s3-website-us-east-1.amazonaws.com/btsync_x64.tar.gz | tar -zx -C x86_64
 
     echo "Building packages"
-    qbuild --exclude-from eclude
+    qbuild --exclude-from exclude
 
     echo "Done"
 fi
