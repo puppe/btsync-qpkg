@@ -63,6 +63,29 @@ If you have any questions, ask them in the [BitTorrent forum
 thread](http://forum.bittorrent.com/topic/19752-bittorrent-sync-on-qnap-nas-devices/)
 or file an issue. Pull requests are always welcome!
 
+## Troubleshooting
+
+### Error upon executing ./make.sh
+
+*Problem*:  
+You get the following error when you execute ./make.sh
+
+```sh
+./make.sh: /usr/bin/qbuild: /bin/bash: bad interpreter: No such file or directory
+```
+
+*Solution*:  
+Create a symbolic link that points to `/bin/sh`, then try again, and
+finally remove the link.
+
+```sh
+ln -s /bin/sh /bin/bash
+./make.sh
+rm /bin/bash
+```
+
+Thanks to [bakanach](http://forum.bittorrent.com/topic/19752-bittorrent-sync-on-qnap-nas-devices/#entry51722)!
+
 ## Thanks
 
 Parts of the init script are taken from Bittorrent forum user

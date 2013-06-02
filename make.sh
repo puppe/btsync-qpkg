@@ -15,7 +15,11 @@ if [[ $1 = "" ]]; then
     echo "Building packages"
     qbuild --exclude-from exclude
 
-    echo "Done"
+    if [[ $? == 0 ]] ; then
+        echo "Done"
+    else
+        echo "Some error occurred, check the troubleshooting section of the README, or post in the forum thread."
+    fi
 fi
 
 if [[ $1 = "clean" ]]; then
