@@ -1,14 +1,24 @@
 # BitTorrent Sync on QNAP NAS devices
 
-## Instructions
-
-This REAMDE will show you how to install BitTorrent Sync on your QNAP
+This REAMDE explains how to install BitTorrent Sync on your QNAP
 NAS device by first building QPKG packages, which can then be installed
 using the QPKG Center application.
 
-**Note**:  
-I have only tested this on a QNAP TS-412. It may or may not work on
-other devices.
+## Compatible Devices
+
+* TS-259Pro (see [this forum post](http://forum.bittorrent.com/topic/19752-bittorrent-sync-on-qnap-nas-devices/#entry51722)
+  and the troubleshooting section)
+* TS-269L
+* TS-412
+
+The following instructions should work for a wide range of QNAP NAS
+devices. If a device is missing, I just have not tested it or heard
+from users about it. Please try and post your results to the [BitTorrent
+forum
+thread](http://forum.bittorrent.com/topic/19752-bittorrent-sync-on-qnap-nas-devices/)
+or make a pull request.
+
+## Instructions
 
 In order to build the packages, you will need to have
 [QDK](http://wiki.qnap.com/wiki/QPKG_Development_Guidelines) installed
