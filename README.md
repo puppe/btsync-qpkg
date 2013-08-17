@@ -10,6 +10,7 @@ using the QPKG Center application.
   and the troubleshooting section)
 * TS-269L
 * TS-412
+* TS-469L
 
 The following instructions should work for a wide range of QNAP NAS
 devices. If a device is missing, I just have not tested it or heard
