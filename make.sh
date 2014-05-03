@@ -4,13 +4,13 @@ if [[ $1 = "" ]]; then
     command -v qbuild >/dev/null 2>&1 || { echo >&2 "qbuild is required in order to build the packages. Aborting."; exit 1; }
     echo "Downloading files"
     mkdir -p arm-x09
-    curl http://btsync.s3-website-us-east-1.amazonaws.com/btsync_arm.tar.gz | tar -zx -C arm-x09
+    curl http://download-lb.utorrent.com/endpoint/btsync/os/linux-arm/track/stable | tar -zx -C arm-x09
     mkdir -p arm-x19
-    curl http://btsync.s3-website-us-east-1.amazonaws.com/btsync_arm.tar.gz | tar -zx -C arm-x19
+    curl http://download-lb.utorrent.com/endpoint/btsync/os/linux-arm/track/stable | tar -zx -C arm-x19
     mkdir -p x86
-    curl http://btsync.s3-website-us-east-1.amazonaws.com/btsync_i386.tar.gz | tar -zx -C x86
+    curl http://download-lb.utorrent.com/endpoint/btsync/os/linux-i386/track/stable | tar -zx -C x86
     mkdir -p x86_64
-    curl http://btsync.s3-website-us-east-1.amazonaws.com/btsync_x64.tar.gz | tar -zx -C x86_64
+    curl http://download-lb.utorrent.com/endpoint/btsync/os/linux-x64/track/stable | tar -zx -C x86_64
 
     echo "Building packages"
     qbuild --exclude-from exclude
