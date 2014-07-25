@@ -6,10 +6,12 @@ using the QPKG Center application.
 
 ## Compatible Devices
 
+* TS-219P
 * TS-259Pro (see [this forum post](http://forum.bittorrent.com/topic/19752-bittorrent-sync-on-qnap-nas-devices/#entry51722)
   and the troubleshooting section)
 * TS-269L
 * TS-412
+* TS-420
 * TS-469L
 
 The following instructions should work for a wide range of QNAP NAS
