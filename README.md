@@ -50,15 +50,14 @@ BitTorrent Sync via a secure connection. And this applies to the QDK
 distribution as well. So yeah, if you are paranoid (not necessarily a
 bad thing), you are out of luck.
 
-Before building the packages, you should change the password for the
-Web UI in file `config/btsync`. If you want to use a different port for
-the Web UI, you will have to edit two files. In file
-`qpkg.cfg`, change the variable `QPKG_WEB_PORT`. In file
-`config/btsync.conf`, edit the line that says `"listen" :
-"0.0.0.0:14859"`. You may also want to change the variable `QPKG_VER` in
-`qpkg.cfg` such that it reflects the current version number of
-BitTorrent Sync. Although I am not quite sure whether this has any
-effect at all.
+Before building the packages, you should change the password for the Web
+UI in file `config/btsync.conf`. If you want to use a different port for
+the Web UI, you will have to edit two files. In file `qpkg.cfg`, change
+the variable `QPKG_WEB_PORT`. In file `config/btsync.conf`, edit the
+line that says `"listen" : "0.0.0.0:14859"`. You may also want to change
+the variable `QPKG_VER` in `qpkg.cfg` such that it reflects the current
+version number of BitTorrent Sync. Although I am not quite sure whether
+this has any effect at all.
 
 You are now ready to execute `./make.sh`. This will download BitTorrent
 Sync and then build the packages using `qbuild`. Once the script has
