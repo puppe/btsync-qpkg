@@ -6,13 +6,9 @@ if [[ $1 = "" ]]; then
     echo "Downloading BitTorrent Sync archive files"
     mkdir -p downloads
     cd downloads
-    
-    curl -kO https://download-cdn.getsync.com/2.1.1/linux-arm/BitTorrent-Sync_arm.tar.gz
-    
-    curl -kO https://download-cdn.getsync.com/2.1.1/linux-i386/BitTorrent-Sync_i386.tar.gz
-    
-    curl -kO https://download-cdn.getsync.com/2.1.1/linux-x64/BitTorrent-Sync_x64.tar.gz
-    
+    <% uris.each do |uri| %>
+    curl -kO <%= uri %>
+    <% end %>
     cd ..
 
     sha256sum -c checksums.txt > /dev/null
@@ -28,10 +24,10 @@ if [[ $1 = "" ]]; then
     done
 
     echo "Extracting archives"
-    tar -C arm-x09 -zxf downloads/BitTorrent-Sync_arm.tar.gz
+    tar -C arm-x09 -zxf downloads/<%= FILE_NAME % "arm" %>
     cp -r arm-x09/* arm-x19/
-    tar -C x86 -zxf downloads/BitTorrent-Sync_i386.tar.gz
-    tar -C x86_64 -zxf downloads/BitTorrent-Sync_x64.tar.gz
+    tar -C x86 -zxf downloads/<%= FILE_NAME % "i386" %>
+    tar -C x86_64 -zxf downloads/<%= FILE_NAME % "x64" %>
 
     rm -r downloads
 

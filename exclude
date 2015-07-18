@@ -1,6 +1,11 @@
 /.git
+/.gitignore
 /build
+/checksums.txt
+/downloads
 /exclude
-/make.sh
-/README.md
 /LICENSE
+/make.sh
+/Rakefile
+/README.md
+/templates

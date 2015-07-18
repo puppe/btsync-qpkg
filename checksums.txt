@@ -1,0 +1,3 @@
+e26dc163d0ac9c5ff7118e915b17cfe2bceca522e0ff09d0e8e071969d69dc22  downloads/BitTorrent-Sync_arm.tar.gz
+6cd5721da6f6c47e406755ee61ef497989a52ff98251fe851a03094dfc87ebdc  downloads/BitTorrent-Sync_i386.tar.gz
+aa96cb533c6d6f901113c6c67cb19896ea934b75bc5fc225dacbc1a1ec24c84f  downloads/BitTorrent-Sync_x64.tar.gz
