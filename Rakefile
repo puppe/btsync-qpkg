@@ -68,7 +68,6 @@ file "qpkg.cfg" => "templates/qpkg.cfg.erb" do |t|
 
   erb = ERB.new(File.read("templates/qpkg.cfg.erb"), nil, "<>")
   IO.write("qpkg.cfg", erb.result(template_data.get_binding))
-  File.chmod(0755, "qpkg.cfg")
 
   puts "Done"
 end
