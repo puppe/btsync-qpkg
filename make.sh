@@ -7,11 +7,11 @@ if [[ $1 = "" ]]; then
     mkdir -p downloads
     cd downloads
     
-    curl -kO https://download-cdn.getsync.com/2.1.1/linux-arm/BitTorrent-Sync_arm.tar.gz
+    curl -kO https://download-cdn.getsync.com/2.3.6/linux-arm/BitTorrent-Sync_arm.tar.gz
     
-    curl -kO https://download-cdn.getsync.com/2.1.1/linux-i386/BitTorrent-Sync_i386.tar.gz
+    curl -kO https://download-cdn.getsync.com/2.3.6/linux-i386/BitTorrent-Sync_i386.tar.gz
     
-    curl -kO https://download-cdn.getsync.com/2.1.1/linux-x64/BitTorrent-Sync_x64.tar.gz
+    curl -kO https://download-cdn.getsync.com/2.3.6/linux-x64/BitTorrent-Sync_x64.tar.gz
     
     cd ..
 

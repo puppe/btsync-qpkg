@@ -2,7 +2,7 @@ require "rake/clean"
 require "open-uri"
 require "erb"
 
-VERSION = "2.1.1"
+VERSION = "2.3.6"
 FILE_NAME = "BitTorrent-Sync_%s.tar.gz"
 DL_URI = "https://download-cdn.getsync.com/#{VERSION}/linux-%s/#{FILE_NAME}"
 
